@@ -1,0 +1,19 @@
+● nginx.service - The nginx HTTP and reverse proxy server
+     Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; preset: disabled)
+     Active: active (running) since Sun 2026-06-14 09:10:17 UTC; 34min ago
+   Main PID: 14558 (nginx)
+      Tasks: 3 (limit: 3988)
+     Memory: 4.7M (peak: 5.2M)
+        CPU: 108ms
+     CGroup: /system.slice/nginx.service
+             ├─14558 "nginx: master process /usr/sbin/nginx"
+             ├─14559 "nginx: worker process"
+             └─14560 "nginx: worker process"
+
+Jun 14 09:10:17 ip-172-31-16-109.ec2.internal systemd[1]: Starting The nginx HTTP and reverse proxy server...
+Jun 14 09:10:17 ip-172-31-16-109.ec2.internal snoopy[14555]: [uid:0 sid:14555 tty:(none) cwd:/ filename:/usr/bin/rm]: /usr/bin/rm -f /run/nginx.pid
+Jun 14 09:10:17 ip-172-31-16-109.ec2.internal snoopy[14556]: [uid:0 sid:14556 tty:(none) cwd:/ filename:/usr/sbin/nginx]: /usr/sbin/nginx -t
+Jun 14 09:10:17 ip-172-31-16-109.ec2.internal nginx[14556]: nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+Jun 14 09:10:17 ip-172-31-16-109.ec2.internal nginx[14556]: nginx: configuration file /etc/nginx/nginx.conf test is successful
+Jun 14 09:10:17 ip-172-31-16-109.ec2.internal snoopy[14557]: [uid:0 sid:14557 tty:(none) cwd:/ filename:/usr/sbin/nginx]: /usr/sbin/nginx
+Jun 14 09:10:17 ip-172-31-16-109.ec2.internal systemd[1]: Started The nginx HTTP and reverse proxy server.
